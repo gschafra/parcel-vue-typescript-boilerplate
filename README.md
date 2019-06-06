@@ -1,4 +1,7 @@
 # parcel-vue-typescript boilerplate project 📦
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/gschafra/parcel-vue-typescript-boilerplate.svg)](https://greenkeeper.io/)
+
 Boilerplate for Vue.js & Typescript, base on Parcel bundler, copied from [masonz/parcel-vue-ts](https://github.com/masonz/parcel-vue-ts) template and modified (updated dependencies, dropped parcle-plugin-vue, since it is natively supported now).
 
 ## What's inside? 🗃
