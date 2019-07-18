@@ -4,6 +4,7 @@
         :key="item.label">
       <a :href="item.link"
          target="_blank">{{ item.label }}</a>
+		 	<sui-button>Test</sui-button>
     </li>
   </ul>
 </template>
