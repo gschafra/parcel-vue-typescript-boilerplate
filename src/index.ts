@@ -2,15 +2,18 @@ import Vue from 'vue'
 import App from './app.vue'
 import router from './router'
 import store from './store'
-import SuiVue from 'semantic-ui-vue'
-import 'semantic-ui-css/semantic.min.css'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+
+Vue.use(Vuetify)
+
+const opts = {}
+
+export default new Vuetify(opts)
 
 const app = new Vue({
-  router,
-  store,
-  render: h => h(App),
-  el: 'app',
-  components: {
-    App
-  }
+	router,
+	store,
+	render: h => h(App),
+	el: 'app'
 })

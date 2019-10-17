@@ -7,5 +7,9 @@
             "wrap_attributes": "force-aligned"
         }
     },
-    "tslint.autoFixOnSave": true
+	"tslint.autoFixOnSave": true,
+	"npm.packageManager": "yarn",
+	"npm-dependency-check.packageManager": "yarn",
+	"tslint.packageManager": "yarn",
+	"window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}"
 }

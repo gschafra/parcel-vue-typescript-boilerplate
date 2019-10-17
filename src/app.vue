@@ -11,7 +11,12 @@
                    :to="{ 'name': 'ecosystem' }">
         Ecosystem
       </router-link>
+      <v-btn large>Normal</v-btn>
       <router-view></router-view>
+      <v-footer>
+        <v-spacer></v-spacer>
+        <div>&copy; {{ new Date().getFullYear() }}</div>
+      </v-footer>
     </div>
   </div>
 </template>
