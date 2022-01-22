@@ -1,23 +1,28 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import Ecosystem from "../views/ecosystem.vue";
+import Essential from "../views/essential.vue";
 
-Vue.use(Router)
-
-import essential from '../components/essential/essential.vue'
-import ecosystem from '../components/ecosystem/ecosystem.vue'
-
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
-    name: 'essential',
-    path: '/essential',
-    component: essential
+    path: "/essential",
+    name: "essential",
+    component: Essential
   },
   {
-    name: 'ecosystem',
-    path: '/ecosystem',
-    component: ecosystem
-  },
-  { path: '*', redirect: '' }
-]
+    path: "/ecosystem",
+    name: "ecosystem",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    //component: () =>
+    //  import(/* webpackChunkName: "about" */ "../views/About.vue")
+	component: Ecosystem
+  }
+];
 
-export default new Router({ routes })
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+});
+
+export default router;

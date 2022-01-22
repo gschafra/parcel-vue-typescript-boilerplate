@@ -1,20 +1,19 @@
-import Vue from 'vue'
-import App from './app.vue'
-import router from './router'
-import store from './store'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+import PrimeVue from 'primevue/config';
+import Dialog from 'primevue/dialog';
+import { createApp } from 'vue';
+import App from './app.vue';
+import router from "./router";
 
-Vue.use(Vuetify)
+import 'primevue/resources/themes/saga-blue/theme.css';
+import 'primevue/resources/primevue.min.css';
+import 'primeicons/primeicons.css';
 
-const opts = {}
+const app = createApp(App);
 
-export default new Vuetify(opts)
+app.use(PrimeVue);
+app.use(router);
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const app = new Vue({
-	router,
-	store,
-	render: h => h(App),
-	el: 'app'
-})
+app.component('Dialog', Dialog);
+
+app.mount('app')
+

@@ -58,3 +58,7 @@ jspm_packages/
 dist/
 build/
 .cache
+/vue.config.js
+/dist
+.idea/
+.parcel-cache/

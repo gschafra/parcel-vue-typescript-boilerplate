@@ -12,5 +12,6 @@
 	"npm-dependency-check.packageManager": "yarn",
 	"tslint.packageManager": "yarn",
 	"window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
-	"deepscan.enable": true
+    "deepscan.enable": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
 }

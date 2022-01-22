@@ -2,31 +2,41 @@
   <div>
     <div class="main">
       <img src="./assets/logo.png">
-      <h1>{{ title }}</h1>
-      <router-link tag="button"
-                   :to="{ 'name': 'essential' }">
+      <h1>{{ title }}!</h1>
+      <router-link
+        tag="button"
+        :to="{ 'name': 'essential' }"
+      >
         Essential
       </router-link>
-      <router-link tag="button"
-                   :to="{ 'name': 'ecosystem' }">
+      <router-link
+        tag="button"
+        :to="{ 'name': 'ecosystem' }"
+      >
         Ecosystem
       </router-link>
-      <v-btn large>Normal</v-btn>
-      <router-view></router-view>
-      <v-footer>
-        <v-spacer></v-spacer>
-        <div>&copy; {{ new Date().getFullYear() }}</div>
-      </v-footer>
+
+      <Dialog
+        v-model:visible="display"
+        header="Header"
+      >
+        Content
+      </Dialog>
+      <router-view />
+      <div>&copy; {{ new Date().getFullYear() }}</div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Options, Vue } from 'vue-class-component';
 
-@Component
+@Options({
+  name: "App",
+})
 export default class App extends Vue {
-  title: string = 'Parcel-Vue-Ts'
+  title = 'Parcel-Vue-Ts';
+  display = true;
 }
 </script>
 

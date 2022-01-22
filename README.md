@@ -2,7 +2,7 @@
 Boilerplate for Vue.js & Typescript, base on Parcel bundler, copied from [masonz/parcel-vue-ts](https://github.com/masonz/parcel-vue-ts) template and modified (updated dependencies, dropped parcle-plugin-vue, since it is natively supported now).
 
 ## What's inside? 🗃
-* [Vue2](https://github.com/vuejs/vue)
+* [Vue3](https://github.com/vuejs/vue)
 * [Vue-Router](https://github.com/vuejs/vue-router)
 * [Vuex](https://github.com/vuejs/vuex)
 * [Typescript](https://github.com/Microsoft/TypeScript)
@@ -12,7 +12,7 @@ Boilerplate for Vue.js & Typescript, base on Parcel bundler, copied from [masonz
 ## Getting Started 🚀
 Clone this repository, and run npm/yarn install.
 ```
-git clone git@github.com:masonz/parcel-vue-ts.git
+git clone git@github.com:gschafra/parcel-vue-typescript-boilerplate.git
 cd parcel-vue-ts
 npm/yarn install
 ```
