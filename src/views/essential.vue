@@ -16,14 +16,22 @@
 </template>
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import { State } from 's-vuex-class';
+// import { State } from 's-vuex-class';
+import { Link } from '../models/link.type';
 
 @Options({
   name: "Essential",
 })
 export default class Essential extends Vue
 {
-	@State('essential') public list: any[];
+	public list: Link[] = [{ label: 'Core Docs', link: 'https://vuejs.org' },
+		{ label: 'Forum', link: 'https://forum.vuejs.org' },
+		{ label: 'Community Chat', link: 'https://chat.vuejs.org' },
+		{ label: 'Twitter', link: 'https://twitter.com/vuejs' }];
+
+	created () {
+		console.log('Essential created');
+	}
 }
 </script>
 
