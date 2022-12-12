@@ -9,6 +9,10 @@ Boilerplate for Vue.js & Typescript, base on Parcel bundler, copied from [masonz
 * [Jest](https://github.com/facebook/jest)
 * [Parcel bundler](https://github.com/parcel-bundler/parcel)
 
+### For class based components use
+* [Vue Class Setup](https://github.com/fmfe/vue-class-setup)
+* [Vue Facing Decotrator](https://github.com/facing-dev/vue-facing-decorator)
+
 ## Getting Started 🚀
 Clone this repository, and run npm/yarn install.
 ```
