@@ -1,4 +1,3 @@
-import Vuex from 'vuex';
 import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
 import { createApp } from 'vue';
