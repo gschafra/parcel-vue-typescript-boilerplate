@@ -15,13 +15,11 @@
   </div>
 </template>
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
 // import { State } from 's-vuex-class';
+import { Component, Vue } from 'vue-facing-decorator';
 import { Link } from '../models/link.type';
 
-@Options({
-  name: "Essential",
-})
+@Component
 export default class Essential extends Vue
 {
 	public list: Link[] = [{ label: 'Core Docs', link: 'https://vuejs.org' },

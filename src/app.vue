@@ -29,11 +29,11 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { Component, Vue } from 'vue-facing-decorator';
 
-@Options({
-  name: "App",
-})
+
+
+@Component
 export default class App extends Vue {
   title = 'Parcel-Vue-Ts';
   display = true;

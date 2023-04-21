@@ -13,12 +13,10 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
 import { State } from 's-vuex-class';
+import { Component, Vue } from 'vue-facing-decorator';
 
-@Options({
-  name: "Ecosystem",
-})
+@Component
 export default class Ecosystem extends Vue
 {
 	@State('ecosystem') public list: any[] = [];

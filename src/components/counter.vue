@@ -15,16 +15,12 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import { Prop } from "vue-property-decorator";
 import { namespace } from "s-vuex-class";
+import { Component, Vue } from 'vue-facing-decorator';
 const counterModule = namespace("counter");
-@Options({
-  name: "Counter",
-})
+@Component
 export default class Counter extends Vue {
-  @Prop({ type: String })
-  private msg!: string;
+  public msg!: string;
   @counterModule.State("_count")
   private counter!: number;
   @counterModule.Getter("count")
