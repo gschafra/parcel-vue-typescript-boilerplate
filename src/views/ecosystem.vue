@@ -13,13 +13,14 @@
 </template>
 
 <script lang="ts">
-import { State } from 's-vuex-class';
+import { Link } from '@/models/link.type';
 import { Component, Vue } from 'vue-facing-decorator';
+import { State } from 'vuex-facing-decorator';
 
 @Component
 export default class Ecosystem extends Vue
 {
-	@State('ecosystem') public list: any[] = [];
+	@State('ecosystem') public list: Link[] = [];
 }
 </script>
 

@@ -15,7 +15,7 @@
   </div>
 </template>
 <script lang="ts">
-// import { State } from 's-vuex-class';
+
 import { Component, Vue } from 'vue-facing-decorator';
 import { Link } from '../models/link.type';
 
