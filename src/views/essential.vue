@@ -16,11 +16,11 @@
 </template>
 <script lang="ts">
 
-import { Component, Vue } from 'vue-facing-decorator';
+import { Component, Vue, toNative } from 'vue-facing-decorator';
 import { Link } from '../models/link.type';
 
 @Component
-export default class Essential extends Vue
+class Essential extends Vue
 {
 	public list: Link[] = [{ label: 'Core Docs', link: 'https://vuejs.org' },
 		{ label: 'Forum', link: 'https://forum.vuejs.org' },
@@ -31,6 +31,8 @@ export default class Essential extends Vue
 		console.log('Essential created');
 	}
 }
+
+export default toNative(Essential);
 </script>
 
 <style lang="scss" scoped>
