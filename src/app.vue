@@ -1,43 +1,44 @@
 <template>
-  <div>
-    <div class="main">
-      <img src="./assets/logo.png">
-      <h1>{{ title }}!</h1>
-      <router-link
-        tag="button"
-        :to="{ 'name': 'essential' }"
-      >
-        Essential
-      </router-link>
-      <router-link
-        tag="button"
-        :to="{ 'name': 'ecosystem' }"
-      >
-        Ecosystem
-      </router-link>
+	<div>
+		<div class="main">
+			<img src="./assets/logo.png">
+			<h1>{{ title }}!</h1>
+			<router-link
+				tag="button"
+				:to="{ 'name': 'essential' }"
+			>
+				Essential
+			</router-link>
+			<router-link
+				tag="button"
+				:to="{ 'name': 'ecosystem' }"
+			>
+				Ecosystem
+			</router-link>
 
-      <Dialog
-        v-model:visible="display"
-        header="Header"
-      >
-        Content
-      </Dialog>
-      <router-view />
-      <div>&copy; {{ new Date().getFullYear() }}</div>
-    </div>
-  </div>
+			<Dialog
+				v-model:visible="display"
+				header="Header"
+			>
+				Content
+			</Dialog>
+			<router-view />
+			<div>&copy; {{ new Date().getFullYear() }}</div>
+		</div>
+	</div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-facing-decorator';
-
-
+import { Component, Vue, toNative } from 'vue-facing-decorator';
 
 @Component
-export default class App extends Vue {
-  title = 'Parcel-Vue-Ts';
-  display = true;
+class App extends Vue {
+	title = 'Parcel-Vue-Ts';
+	display = true;
 }
+
+//Transform class component to vue native component
+export default toNative(App)
 </script>
 
 <style lang="scss">
