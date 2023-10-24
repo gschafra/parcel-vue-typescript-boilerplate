@@ -1,33 +1,35 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <div>
-      <button @click="add">
-        +
-      </button>
-      <button @click="subtract">
-        -
-      </button>
-    </div>
-    <div>State: {{ counter }}</div>
-    <div>Getter: {{ getCounter }}</div>
-  </div>
+	<div class="hello">
+		<h1>{{ msg }}</h1>
+		<div>
+			<button @click="add">
+				+
+			</button>
+			<button @click="subtract">
+				-
+			</button>
+		</div>
+		<div>State;: {{ count }}</div>
+		<div>Getter;: {{ getCount }}</div>
+	</div>
 </template>
 
 <script lang="ts">
-import { namespace } from "s-vuex-class";
-import { Component, Vue } from 'vue-facing-decorator';
-const counterModule = namespace("counter");
+import { Component, Vue, toNative } from 'vue-facing-decorator';
+import { Action, Getter, State } from 'vuex-facing-decorator';
+
 @Component
-export default class Counter extends Vue {
-  public msg!: string;
-  @counterModule.State("_count")
-  private counter!: number;
-  @counterModule.Getter("count")
-  private getCounter!: () => number;
-  @counterModule.Action
-  private add!: () => Promise<void>;
-  @counterModule.Action
-  private subtract!: () => Promise<void>;
+class Counter extends Vue {
+	public msg!: string;
+
+	@State public count: number = 0;
+
+	@Getter public getCount!: () => number;
+
+	@Action public add!: () => Promise<void>;
+
+	@Action public subtract!: () => Promise<void>
 }
+
+export default toNative(Counter)
 </script>
