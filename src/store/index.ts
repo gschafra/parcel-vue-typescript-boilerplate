@@ -1,4 +1,4 @@
-import Vuex from 'vuex';
+import { Store } from 'vuex';
 
 const state: State.Root = {
 	ecosystem: [
@@ -18,7 +18,7 @@ const mutations = {};
 const actions = {};
 const getters = {};
 
-const store = new Vuex.Store({
+const store = new Store({
 	state,
 	mutations,
 	actions,

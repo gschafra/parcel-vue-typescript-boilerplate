@@ -9,6 +9,7 @@
     "sourceMap": true,
     "declaration": true,
     "jsx": "preserve",
+	"jsxImportSource": "vue",
     "lib": [
       "esnext",
       "dom",
@@ -26,6 +27,7 @@
     "importHelpers": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+	"isolatedModules": true,
     "typeRoots": ["./node_modules/@types/", "./typings/"],
     "paths": {
       "@/*": [

@@ -4,14 +4,17 @@ import { createApp } from 'vue';
 import App from './app.vue';
 import router from "./router";
 
+import Lara from '@primevue/themes/lara';
 import 'primeicons/primeicons.css';
-import 'primevue/resources/primevue.min.css';
-import 'primevue/resources/themes/saga-blue/theme.css';
 import store from './store/index';
 
 const app = createApp(App);
 
-app.use(PrimeVue);
+app.use(PrimeVue, {
+    theme: {
+        preset: Lara
+    }
+});
 app.use(router);
 app.use(store);
 
