@@ -1,7 +1,7 @@
 
 
 module.exports = {
-    "plugins": [
+    'plugins': [
         'import-quotes',
 		'@stylistic',
 		'@typescript-eslint',
@@ -13,7 +13,7 @@ module.exports = {
 		// 'plugin:vue/vue3-recommended',
 		'plugin:vue/recommended', // Use this if you are using Vue.js 2.x.
 		// '@vue/typescript/recommended',
-		"plugin:@typescript-eslint/recommended",
+		'plugin:@typescript-eslint/recommended',
 	],
 	rules: {
 		// override/add rules settings here, such as:
