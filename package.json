@@ -21,10 +21,10 @@
 		"@parcel/transformer-typescript-tsc": "^2.13.3",
 		"@parcel/transformer-vue": "^2.13.3",
 		"@parcel/validator-typescript": "^2.13.3",
-		"@stylistic/eslint-plugin": "^2.12.1",
-		"@types/node": "^20.17.10",
-		"@typescript-eslint/eslint-plugin": "^8.19.0",
-		"@typescript-eslint/parser": "^8.19.0",
+		"@stylistic/eslint-plugin": "^2.13.0",
+		"@types/node": "^20.17.17",
+		"@typescript-eslint/eslint-plugin": "^8.23.0",
+		"@typescript-eslint/parser": "^8.23.0",
 		"@vue/cli": "^5.0.8",
 		"@vue/cli-service": "^5.0.8",
 		"@vue/compiler-sfc": "^3.5.13",
@@ -46,16 +46,16 @@
 		"jest": "^29.7.0",
 		"jest-serializer-vue": "^3.1.0",
 		"parcel": "^2.13.3",
-		"postcss": "^8.4.49",
+		"postcss": "^8.5.1",
 		"prettier": "^3.4.2",
 		"rimraf": "^6.0.1",
-		"sass": "^1.83.0",
+		"sass": "^1.84.0",
 		"tslib": "^2.8.1",
-		"typescript": "^5.7.2"
+		"typescript": "^5.7.3"
 	},
 	"dependencies": {
 		"@primevue/themes": "^4.2.5",
-		"core-js": "^3.39.0",
+		"core-js": "^3.40.0",
 		"primeicons": "^7.0.0",
 		"primevue": "^4.2.5",
 		"tsyringe": "^4.8.0",
@@ -91,10 +91,18 @@
 			"allowedVersions": {
 				"svgo": "2.8.0"
 			}
-		}
+		},
+		"onlyBuiltDependencies": [
+			"@apollo/protobufjs",
+			"@parcel/watcher",
+			"@swc/core",
+			"core-js",
+			"lmdb",
+			"msgpackr-extract"
+		]
 	},
 	"volta": {
-		"node": "20.18.1",
-		"pnpm": "9.15.2"
+		"node": "20.18.2",
+		"pnpm": "10.2.1"
 	}
 }
