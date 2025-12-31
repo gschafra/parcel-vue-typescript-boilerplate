@@ -2,9 +2,9 @@ import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
 import { createApp } from 'vue';
 import App from './app.vue';
-import router from "./router";
+import router from './router';
 
-import Lara from '@primevue/themes/lara';
+import Lara from '@primeuix/themes/lara';
 import 'primeicons/primeicons.css';
 import store from './store/index';
 
