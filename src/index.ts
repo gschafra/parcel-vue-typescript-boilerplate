@@ -18,7 +18,7 @@ app.use(PrimeVue, {
 app.use(router);
 app.use(store);
 
-// eslint-disable-next-line vue/no-reserved-component-names
+// eslint-disable-next-line vue/no-reserved-component-names,vue/multi-word-component-names
 app.component('Dialog', Dialog);
 
 app.mount('#app')
