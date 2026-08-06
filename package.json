@@ -52,7 +52,7 @@
 		"parcel": "^2.16.4",
 		"parcel-resolver-pnpm": "^0.0.1",
 		"parcel-resolver-typescript-esm": "^1.0.1",
-		"postcss": "^8.5.15",
+		"postcss": "^8.5.23",
 		"prettier": "^3.8.3",
 		"rimraf": "^6.1.3",
 		"sass": "^1.100.0",
